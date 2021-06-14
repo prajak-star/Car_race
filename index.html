@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style>
+body{
+	background-image: url("bg2334.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#mycanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h2,h4
+{
+	color:black !important;
+}
+</style>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+<title>Car Race</title>
+
+</head>
+
+<body onload="add()">
+
+	<center>
+	<h1>Moving Rover On Mars</h1>
+	<h2 id="won12"> Max players-2 </h2>
+	<h2 id="result">  </h2>
+ <canvas width="800" height="600" id="mycanvas"> </canvas>
+ <h4>
+	<b class="text-danger">How to play : </b> Player-1 = A=left,D=right,E=up,S=down; Player-2 = J=left,L=right,O=up,K=down;
+</h4>
+
+</center>
+
+<script src="main.js">
+
+</script>
+
+</body>
+
+</html>
