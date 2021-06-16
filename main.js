@@ -5,15 +5,15 @@ background_image="tracks.jpg";
 //car1 width and all//
 car1width=100;
 car1height=100;
-car1x=10;
-car1y=2;
+car1x=270;
+car1y=500
 car1_image="car1.jpg";
 
 //car2 width and all//
 car2width=100;
 car2height=100;
-car2x=70;
-car2y=2;
+car2x=200;
+car2y=500;
 car2_image="car2.jpg";
 
 function add(){
@@ -100,15 +100,17 @@ function mykeydown(e){
        console.log("right");
      }
 
-     // who won (car1 ?)//
+     // who won//
 
-     if(car1y>550){
-         document.getElementById("result").innerHTML="Car 1 has won (grey car)"
-     }
-     else if (car2y>550){
-        document.getElementById("result").innerHTML="Car 2 has won (yellow car)"
-     }
+     if(car1y<10){
+        document.getElementById("result").innerHTML="Car 1 has won (grey car)"
+    }
+    else if (car2y<10){
+       document.getElementById("result").innerHTML="Car 2 has won (yellow car)"
+    }
+    
 }
+
 
 //car1 functions for up, down, left and right//
 
